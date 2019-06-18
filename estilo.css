@@ -1,0 +1,173 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url(img/patron.jpg);
+}
+#contenido {
+	background-color: #dea1f5;
+
+}
+
+header{
+	background-image: url(img/header.png);
+	background-size: cover;
+
+	/*background-color: #f5a1e4;*/
+}
+
+#fotoshome{
+	margin-top: 10px;
+}
+
+#desafio{
+	margin-top: 15px;
+	text-align: center;
+}
+
+#princesa{
+	margin-top: 15px;
+	text-align: center;
+}
+
+#videohome{
+	
+}
+
+
+#pie {
+	background-color: #d39dbc;
+}
+
+
+.tran1{
+	opacity: 0;
+	background-color: #dea1f5;
+	border-radius: 15px;
+	color: black;
+	transition:2s ease-out;
+	transition-property: all;
+}
+.tran1:hover{
+	opacity: 1;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+h3{
+	text-align: center;
+}
+
+.modal-backdrop
+{
+	background-color: #dea1f5;
+    opacity:0.5;
+}
+
+.premios{
+	font-family: 'Courgette', cursive;
+}
+
+@keyframes lee2{
+	0%{ transform: scale(0,0); }
+	100%{transform: scale(1,1); opacity: 1;}
+}
+
+.encons{
+	opacity: 0;
+	overflow: hidden;
+	position: relative; 
+	animation-name: lee2;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	
+}
+@keyframes texto{
+	0%{transform: translate(-100px);}
+	80%{transform: opacity:1;}
+	100%{transform: translate(150px);opacity:1;}
+}
+
+.primertexto{
+	opacity: 0;
+	position: absolute;
+	animation-name: texto;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+@keyframes aparicion{
+	0%{	opacity: 0;}
+	100%{ opacity: 1;}
+}
+.segundo{
+	margin-left: 150px;
+	opacity: 0;
+	animation-name: aparicion;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 3s;
+
+}
+.foto{
+	position: relative;
+}
+.anim2{
+	opacity: 0;
+	position: absolute;z-index: 1;
+	background-color: #ad2690;
+	color: black;
+}
+
+@keyframes per{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.anim2:hover{
+	animation-name: per;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes despla{
+	0%{transform: translateX(1000px);}
+	50%{transform: opacity:0;}
+	100%{transform: translateX(0px);opacity:1;}
+}
+.anim2 h5{
+	opacity: 0;
+	animation-name: despla;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.anim2 p{
+	opacity: 0;
+	animation-name: despla;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+#video{
+	margin-top: 20px;
+}
