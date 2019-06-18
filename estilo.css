@@ -171,3 +171,22 @@ h3{
 #video{
 	margin-top: 20px;
 }
+
+#textocontacto{
+	text-align: center;
+}
+.fotocontacto{
+	opacity: 0;
+}
+
+@keyframes aparece{
+	0%{transform: translateY(1500px);}
+	
+	100%{transform: translateY(0px);opacity:1;}
+}
+.fotocontacto{
+	
+	animation-name: aparece;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
